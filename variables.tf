@@ -42,3 +42,7 @@ variable "pods_range_name" {
 variable "svcs_range_name" {
   type = string
 }
+
+variable "gke_control_plane_cidr_block" {
+  type = string
+}

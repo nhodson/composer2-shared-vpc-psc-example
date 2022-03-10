@@ -98,6 +98,7 @@ resource "google_composer_environment" "svpc_test" {
     private_environment_config {
       enable_private_endpoint              = true
       cloud_composer_connection_subnetwork = var.svpc_subnet
+      master_ipv4_cidr_block               = var.gke_control_plane_cidr_block
     }
   }
 }
